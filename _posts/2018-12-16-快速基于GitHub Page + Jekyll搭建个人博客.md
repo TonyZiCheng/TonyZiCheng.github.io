@@ -11,6 +11,8 @@ tags:
     - github
 ---
 
+> 本文适用于无需深入了解jekyll原理，只求快速看到成效的读者- -
+
 # 1. 环境搭建
 
 ## 1.1 Mac or Linux
@@ -116,18 +118,7 @@ zhihu_username:     xxxxx
 
 接着在/_layouts/page.html里合适的地方添加如下代码（ctrl+f搜索codeforces__name的对应地方）：
 
-```
-{% if site.zhihu_username %}
-                            <li>
-                                <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                                    <span class="fa-stack fa-lg">
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                    </span>
-                                </a>
-                            </li>
-                            {% endif %}
-```
+![](https://github.com/rookflying/rookflying.github.io/blob/master/img/github_jekyll/html_code.png?raw=true)
 
 页面下方也有超链接，也往_includes/footer.html里添加上面这段代码。
 
