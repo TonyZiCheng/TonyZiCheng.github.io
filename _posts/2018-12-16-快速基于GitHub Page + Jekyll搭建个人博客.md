@@ -118,15 +118,15 @@ zhihu_username:     xxxxx
 
 ```
 {% if site.zhihu_username %}
-          <li>
-              <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
-                    <span class="fa-stack fa-lg">
-                             <i class="fa fa-circle fa-stack-2x"></i>
-                             <i class="fa  fa-stack-1x fa-inverse">知</i>
-                    </span>
-             </a>
-          </li>
-{% endif %}
+                            <li>
+                                <a target="_blank" href="https://www.zhihu.com/people/{{ site.zhihu_username }}">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa  fa-stack-1x fa-inverse">知</i>
+                                    </span>
+                                </a>
+                            </li>
+                            {% endif %}
 ```
 
 页面下方也有超链接，也往_includes/footer.html里添加上面这段代码。
