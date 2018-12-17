@@ -157,7 +157,7 @@ gitalk:
 
 gitalk需要一个Github Application,[点击注册](https://github.com/settings/applications/new)
 
-![](https://github.com/rookflying/rookflying.github.io/blob/master/img/github_jekyll/register_github_application.png)
+![](https://github.com/rookflying/rookflying.github.io/blob/master/img/github_jekyll/register_github_application.png?raw=true)
 
 Homepage URL 和 Authorization callback URL 填的都是博客地址，即https://xxx.github.io。如果自己买了域名，并且解析到xxx.github.io，则也可以填域名。注册完会返回 clientId 和 clientSecret ，填入配置文件即可。
 
