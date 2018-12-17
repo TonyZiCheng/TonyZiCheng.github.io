@@ -182,3 +182,61 @@ tags:
 # 6. index.html/about.html/tags.html
 
 index.html ， about.html ， tags.html 分别对应 HOME 主页， ABOUT 页和 TAGS 页。 ABOUT 页和 TAGS 页的背景图和文字（ description ）需要在 about.html 和 tags.html 的文件头里配置。 HOME 页的背景图在全局配置文件里配置，文字在 index.html 的文件头里配置。
+
+# 7. 自己的域名
+
+可以在各种云服务商购买自定义域名，如腾讯云，阿里云等，都需要进行实名认证，一般一个工作日内就认证成功。购买之后进入域名管理，点击解析：
+
+![](https://github.com/rookflying/rookflying.github.io/blob/master/img/github_jekyll/domain_1.png?raw=true)
+
+添加两条记录：
+
+![](https://github.com/rookflying/rookflying.github.io/blob/master/img/github_jekyll/domain_2.png?raw=true)
+
+CNAME类型比较好配置，记录值填的是博客原始地址，博客原始地址用的是 github 下的二级域名，不建议直接填 ip ，ip 有可能会变。填完之后查看解析状态，一般会提示你需要修改dns服务器，如果确认已修改，则忽略不用管。官方说明为使各地运营商解析同步，最长需要72小时。因此需要等待，几小时之后再回来看看。
+
+同时需要在远程master分支上添加CNAME文件，文件内容只有一行，就是自己的域名。当域名解析状态变成“正常解析”时，就可以使用域名访问了。
+
+# 8. SEO优化
+
+SEO优化（搜索引擎优化）则又是一个很广的领域，简单地说就是利用搜索引擎可以搜索到自己的站点。如在搜索引擎搜索：
+
+```
+site:xxxxx.com
+```
+
+如果站点已被收录，则会显示结果。利用这个可以验证站点是否被收录。
+
+这里介绍利用sitemap文件使站点被收录的方法。
+
+## 8.1 sitemap
+
+一个站点如果不做任何SEO优化，搜索引擎如百度谷歌很难发现站点的存在，也许总有一天终于被发现了，但速度太慢了。因此我们可以主动提交站点信息给搜索引擎。
+
+sitemap（站点地图）其实就是该站点上各个网页的地址，将该文件主动提交给搜索引擎，可以提高收录效率（并不是一定会被收录。。）。前面安装的一个插件jekyll-sitemap就是用来生成sitemap文件的，push到远程master分支以后，直接访问http://域名/sitemap.xml就可以看到sitemap文件的内容。
+
+## 8.2 谷歌收录
+
+用谷歌搜索 site:自己的站点 ，若站点未被收录，第一条结果就是“尝试使用 Google Search Console”。
+
+点击进去：
+
+- 首先添加站点，一般需要验证站点所有权，验证方式就是给你一个html文件，你需要把该文件上传到远程master分支，然后进行验证。
+- 接着提交站点地图，提交方式就是输入站点地图的地址。
+- 等待。收录也需要时间- -。
+
+## 8.3 百度收录
+
+[百度搜索资源平台](https://ziyuan.baidu.com/site/index)
+
+- 添加站点，也需要验证，验证方式也可以采用上面所说的。
+- 点击链接提交，提交方式分为自动提交和手动提交。自动提交又分为主动推送，自动推送和sitemap。上面都有说明，按需选择。
+- 等待。（百度收录貌似很慢很玄学- -）
+
+还有一些技巧比如在别的站点添加自己站点的链接等。
+
+本文介绍差不多就完了，[最后顺便求个star~](https://github.com/rookflying/rookflying.github.io)
+
+
+
+
