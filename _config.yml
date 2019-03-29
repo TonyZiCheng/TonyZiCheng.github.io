@@ -1,17 +1,17 @@
 # Site settings
-title: rookflying's blog
-SEOTitle: rookflying's blog
+title: 我家呆呆
+SEOTitle: 我家呆呆
 header-img: img/home.jpg
-email: cpeng2424@163.com
-description: "Somebody has to win"
-keyword: "rookflying"
+email: 451024051@qq.com
+description: "摸索中的程序猿"
+keyword: "JAVA"
 url: "https://TonyZiCheng.com"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/TonyZiCheng/TonyZiCheng.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Somebody has to win"
+sidebar-about-description: "摸索中的程序猿"
 sidebar-avatar: /img/avatar.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -19,7 +19,7 @@ sidebar-avatar: /img/avatar.jpeg      # use absolute URL, seeing it's used in bo
 # SNS settings
 RSS: false
 github_username:        TonyZiCheng
-codeforces_username:    DamJoker
+codeforces_username:    TZC
 
 
 
